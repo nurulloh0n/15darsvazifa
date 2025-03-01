@@ -7,7 +7,123 @@
 }
 
 .container{
-    max-width: ;
+    max-width: 1440;
+    width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 20px;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    position: relative;
+}
+
+.site-name{
+    color: white;
+    font-family: 'Alata';
+    position:absolute;
+    top: 84px;
+    left: 185px;
+    font-size: 30px;
+    font-weight: 900px;
+    text-decoration: none;
+}
+
+.nav-column{
+    display: flex;
+    gap: 32px;
+    position: absolute;
+    top: 88px;
+    right: 185px;
+}
+
+.nav-items{
+    list-style: none;
+    text-decoration: none;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: 'Alata';
+    color: white;
+}
+
+ul a{
+    text-decoration: none;
+}
+
+.header-title{
+    display: inline-block;
+    width: 650px;
+    height: 278px;
+    border: 2px solid white;
+    position: absolute;
+    top: 246px;
+    left: 185px;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    font-size: 72px;
+    line-height: 70px;
+    text-transform:uppercase;
+    padding: 40px;
+}
+
+.nav-items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav-items::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    display: inline-block;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-items:hover::after{
+    width: 100%;
+}
+
+.hero-photo{
+    margin-top:160px ;
+    margin-left: 184px;
+}
+
+.hero-info{
+    position: absolute;
+    width: 541px;
+    height: 319px;
+    top: 1015px;
+    left: 754px;
+    background-color: white;
+    padding-top: 96px;
+    padding-left: 96px;
+}
+
+.hero-title{
+    font-family: 'Josefin Sans';
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.hero-text{
+    font-family: 'Alata';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
 }
